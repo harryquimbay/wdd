@@ -1,0 +1,126 @@
+/* CSS Variables */
+:root {
+    --primary-color: #216869;
+    --secondary-color: #1f2421;
+    --accent1-color: #49a078;
+    --accent2-color: #dce1de;
+
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Lato', sans-serif;
+}
+
+/* CSS */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+}
+
+
+/*Logo */
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* HERO SECTION */
+.hero {
+    background-image: url('../images/rafting_background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-card {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 2rem;
+    max-width: 600px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* GALLERY COLLAGE */
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.image-collage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* HEADER & NAV */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+.image-collage img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+.social-icon {
+    width: 25px; 
+    height: auto;
+    margin: 0 5px; 
+    vertical-align: middle;
+}
