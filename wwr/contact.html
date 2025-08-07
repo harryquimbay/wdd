@@ -2,75 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Otter Rafting">
-    <meta name="description" content="Contact us. Learn more about our adventures.">
+    <meta name="description" content="Contact us. Get in touch for questions, reservations, and more..">
     <title>Contact | Otter Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/rafting2.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <img src="images/raftinglogo.png" alt="Otter Rafting Logo" />
-        <span class="site-name">Otter Rafting</span>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-grid">
+            <img src="images/raftinglogo.png" alt="Otter Rafting Logo" class="logo">
+            <h1>Otter Rafting</h1>
+            <nav>
+                <ul class="nav-flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div class="hero">
-            <h1>White Water Rafting Company</h1>
-            <article>
-                <img src="images/happy_client.jpg" alt="Happy Client">
-                <p>At White Water Rafting Company, we are passionate about providing thrilling and unforgettable rafting experiences. Our team of experienced guides is dedicated to ensuring your safety and enjoyment on the water.</p>
-                
-            </article>
-        </div>
-    <section class="history">
-        <h2>History</h2>
-        <p>Otter Rafting was founded in 2010 by a group of outdoor enthusiasts who wanted to share the thrill of white water rafting. Over the years, we’ve grown into a top-rated adventure company, offering guided tours, safety training, and unforgettable memories on the water.</p>
-    </section>
+    <main class="contact-page">
+        <section class="reach-team">
+            <h2>Reach Our Team</h2>
+            <p>We love questions and feedback and we're always happy to help!<br>Here are some ways to contact us.</p>
+            <div class="contact-options">
+                <div class="card">
+                    <h3>Call us to Book</h3>
+                    <p>Chat with our sales team to discover how our product can work best for you.<p>
+                    <p class="phone"> </p>
+                    <button class="support-btn">+57 123 456 789</button> 
+                </div>
+                <div class="card">
+                    <h3>Contact Customer Support</h3>
+                    <p>We are waiting to help you and your team so do not hesitate to reach out!</p>
+                    <button class="support-btn">CONTACT SUPPORT</button>
+                </div>
+            </div>
+        </section>
 
-    <section class="adventures">
-        <h2>Adventure Awaits You!</h2>
-        <div class="gallery">
-            <figure>
-            <img src="images/rafting1.jpg" alt="River Canyon Run">
-            <figcaption>River Canyon Run</figcaption>
-            </figure>
-            <figure>
-            <img src="images/rafting2.jpg" alt="Wild Rapids Tour">
-            <figcaption>Wild Rapids Tour</figcaption>
-            </figure>
-            <figure>
-            <img src="images/rafting3.jpg" alt="Family Float">
-            <figcaption>Family Float</figcaption>
-            </figure>
-            <figure>
-            <img src="images/rafting4.jpg" alt="Twilight Drift">
-            <figcaption>Twilight Drift</figcaption>
-            </figure>
-            <figure>
-            <img src="images/rafting5.jpg" alt="Otter Splash">
-            <figcaption>Otter Splash</figcaption>
-            </figure>
-        </div>
-    </section>
+        <section class="headquarters">
+            <h3>Headquarters</h3>
+            <p><strong>Colombia</strong></p>
+            <ul>
+                <li>123 Rapids St, Waves Town, CO 110111</li>
+                <li>info@raftingotters.com</li>
+                <li>+57 (123) 456-7890</li>
+            </ul>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses-419!2sco!4v1754450792115!5m2!1ses-419!2sco!6m8!1m7!1sSUJNjy68Gj5Z5eq2Uh0Dvw!2m2!1d5.998890046390065!2d-75.0690875048391!3f136.59703673041153!4f-13.730374578348105!5f0.7820865974627469" width="400" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h3>Meet Our Team</h3>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/happyguy.jpg" alt="Smiling rafting guide">
+                    <figcaption>Marcus - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/customerservice.jpg" alt="Customer service representative">
+                    <figcaption>Rick - Customer Service</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/singlesmile.jpg" alt="Rafting logistics manager">
+                    <figcaption>Sophia - Logistics Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Purpose of Message:</p>
+                <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label><br>
+                <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label><br>
+                <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>©2025 Otter Rafting | Harry Quimbay</p>
-        <nav class="socialmedia">
-        <a href="#"><img src="images/facebook_icon.png" alt="Facebook"></a>
-        <a href="#"><img src="images/instagram_icon.png" alt="Instagram"></a>
-        <a href="#"><img src="images/x_icon.png" alt="Twitter"></a>
-        </nav>
+        <p>© 2025 Otter Rafting. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook_icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/x_icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram_icon.png" alt="Instagram"></a>
+        </div>
+        <p><a href="https://app.moqups.com/WwZwC1O7Au4TZBSlsYZ1XAcUpooBqYV2/view/page/ad12de680" target="_blank">View Wireframe</a></p>
     </footer>
 </body>
 </html>
