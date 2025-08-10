@@ -45,7 +45,7 @@ body {
     border-radius: 6px;
     padding: 1.5rem;
     width: 300px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -152,7 +152,11 @@ header {
     font-size: 2rem;
     font-style: var(--heading-font);
 }
-
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 0.5rem 2rem;
+}
 header img {
     height: 200px;
     width: auto;
@@ -163,7 +167,6 @@ header h1 {
     font-family: var(--heading-font);
     font-size: 2rem;
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -210,7 +213,7 @@ nav ul li a {
     background-image: url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 200px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,13 +255,26 @@ nav ul li a {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
+.hero-text {
+    display: inline-block; 
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 0.5rem 1rem; 
+    font-size: 2rem;
+    border-radius: 5px;
+    white-space: nowrap; 
+}
+
 .hero-content img {
     width: 100px;
     border-radius: 1px;
     position: absolute;
     top: 50%;
     left: 50%;
-
 }
 
 .contact-info {
@@ -294,7 +310,7 @@ nav ul li a {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border: none;
-    background-color: #49a078;
+    background-color: #216869;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -394,7 +410,7 @@ nav ul li a {
 }
 
 .contact-form button {
-    background-color: #49a078;
+    background-color: #216869;
     color: white;
     border: none;
     border-radius: 4px;
@@ -483,7 +499,7 @@ nav ul li a {
 
 .cta {
     text-align: center;
-    background: #006d77;
+    background: #216869;
     color: #fff;
     padding: 2rem 1rem;
     margin-top: 2rem;
@@ -516,9 +532,10 @@ nav ul li a {
     text-align: center;
 }
 .trip-options img {
+    aspect-ratio: 4/2;
     width: 100%;
-    height: 200px;
     object-fit: cover;
+    display: block;
 }
 .trip-options h3 {
     margin: 1rem 0 0.5rem;
@@ -547,7 +564,7 @@ nav ul li a {
     text-align: center;
 }
 .trip-table th {
-    background: #006d77;
+    background: #216869;
     color: #fff;
 }
 .trip-table tr:nth-child(even) {
@@ -555,11 +572,11 @@ nav ul li a {
 }
 
 footer a {
-    color: #ffb703;
+    color: #216869;
     text-decoration: underline;
 }
 footer a:hover {
-    color: #fb8500;
+    color: #216869;
 }
 
 .adventures {
@@ -713,7 +730,7 @@ footer a:hover {
 
 .cta .btn {
     display: inline-block;
-    background: #0077b6;
+    background: #216869;
     color: white;
     padding: 0.8rem 1.5rem;
     font-size: 1.1rem;
@@ -724,10 +741,10 @@ footer a:hover {
 }
 
 .cta .btn:hover {
-    background: #005f87;
+    background: #216869;
 }
 
-/* Trip table */
+/* TRIP TABLE*/
 .trip-table {
     width: 100%;
     border-collapse: collapse;
@@ -742,7 +759,7 @@ footer a:hover {
 }
 
 .trip-table th {
-    background: #0077b6;
+    background: #216869;
     color: white;
 }
 
@@ -791,6 +808,14 @@ footer {
     width: 24px; 
     height: 24px;
     margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .hero-text {
+        font-size: 1.5rem;
+        white-space: normal; 
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
